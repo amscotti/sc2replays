@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<style type="text/css">
+    body {
+		# text-align: center;
+		background-color: #3f3f3f;
+		background-image:url("/media/bgstripe_3.png");
+		color: #ffffff;
+    }
+	table {
+		border-radius: 10px;
+		background-color: #ffffff;
+		color: #3f3f3f;
+	}
+	td {
+		text-align: center;
+	}
+	.orange {
+		color: #000000;
+		background-color: #e08510;
+		border-radius: 10px;
+	}
+	#wrapper {
+		margin: 0 auto;
+		width: 800px;
+		text-align: left;
+	</style>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<div id=wrapper>
+    <h1>SC2 Replays...</h1>
+	{{ page_name }}
+    <table width=800px>
+		<tr class='orange'>
+			<td width=100>
+			Test 2
+			</td>
+			<td width=200>
+			Test 2
+			</td>
+			<td width=100>
+			Test 2
+			</td>
+		</tr>
+		<tr >
+			<td>
+			Test 2
+			</td>
+			<td>
+			Test 2
+			</td>
+			<td>
+			Test 2
+			</td>
+		</tr>
+	</table>
+	
+	{% block content %}{% endblock %}
+    </div>
+</body>
+</html>
