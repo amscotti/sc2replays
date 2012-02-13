@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table width=800px>
+	<tr>
+		<td>
+			Id from link is - {{ id }}<br><br>
+			filename - {{replay_file }}<br><br>
+			{{ gamemap }}<br><br>
+			{{ r.length.hours }}h {{ r.length.mins }}m {{ r.length.secs }}s<br><br>
+			{% for players, name in r.teams.players.items %}
+				{{ players }}<br><br>
+			{% endfor %}
+		</td>
+	</tr>
+</table>
+
+{% endblock %}
+	gametime = r.length
+	gamedate = r.date
+	gamemap = r.map
+	player1 = r.player[1].name
+	player2 = r.player[2].name
+	p1bneturl = r.player[1].url
+	p2bneturl = r.player[2].url
+	p1race = r.player[1].play_race
+	p2race = r.player[2].play_race
+	p1result = r.player[1].result
+	p2result = r.player[2].result

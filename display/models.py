@@ -15,5 +15,5 @@ class Replays(models.Model):
 	format = models.CharField(max_length=15)
 	game_category = models.CharField(max_length=20)
 	
-	def __unicode__(self):
-		return self.id
+	#def __unicode__(self):
+	#	return self.id
