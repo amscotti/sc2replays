@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Opificio';
+	src: url('/media/fonts/Opificio.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Neou-Bold';
+	src: url('/media/fonts/Neou-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+@font-face {
+	font-family: 'Neou-Thin';
+	src: url('/media/fonts/Neou-Thin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Secret-Code';
+	src: url('/media/fonts/Secret-Code.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+
+@font-face {
+	font-family: 'Cicle-Semi';
+	src: url('/media/fonts/Cicle Semi.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+
+@font-face {
+	font-family: 'Cicle-Shadow';
+	src: url('/media/fonts/Cicle Shadow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+
+@font-face {
+	font-family: 'harabara';
+	src: url('/media/fonts/Harabara.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}	
+
+body {
+	font-family: harabara;
+	# background-color: #3f3f3f;
+	background-color: #1f1f1f;
+	# background-image:url("/media/img/bgstripe_3.png");
+	color: #ffffff;
+	
+   }
+table {
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #3f3f3f;
+}
+td {
+	text-align: center;
+}
+
+h2	{
+	# font-family: Cicle-Shadow;
+	font-size: 35px;
+}
+
+.orange {
+	# color: #000000;
+	background-color: #e08510;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.orange a:link    {text-decoration: none; color:#3f3f3f;}
+.orange a:visited {text-decoration: none; color:#3f3f3f;}
+.orange a:active  {text-decoration: none; color:#ffffff;}
+.orange a:hover   {text-decoration: none; color:#ffffff;}
+
+#wrapper {
+	margin: 0 auto;
+	width: 800px;
+	text-align: left;
+	}
+
+.content-table	{
+	font-family: arial;
+	padding: 0px;
+	border-spacing: 0px;
+	}
+
+.content-table-dark	{
+	background-color: #efefef;
+	padding: 0px;
+	border: 0px;
+	border-spacing: 0px;
+	}
+	
+.content-table-header	{
+	font-family: harabara;
+	padding: 0px;
+	border: 0px;
+	border-spacing: 0px;
+	}
+	
+.top_nav	{
+	width: 800px;
+	height: 20px;
+	background: #e08510;
+	border-radius: 5px;
+	padding: 4px;
+	}
+	
+.login	{
+	width: 800px;
+	height: 20px;
+	text-align: right;
+	float: right;
+	# background: #e08510;
+	# border-radius: 5px;
+	# padding: 4px;
+	}
+	
+a:link    {text-decoration: none; color:#3f3f3f;}
+a:visited {text-decoration: none; color:#3f3f3f;}
+a:active  {text-decoration: none; color:#ffffff;}
+a:hover   {text-decoration: none; color:#ffffff;}

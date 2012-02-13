@@ -9,7 +9,12 @@ import settings
 
 urlpatterns = patterns('',
 	('^$', views.home),
-
+	('^home/$', views.home),
+	('^login/$', views.login),
+	('^replays/$', views.replays),
+	('^streams/$', views.streams),
+	('^stats/$', views.stats),
+	
 	(r'^media/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT}),
 
     # Examples:

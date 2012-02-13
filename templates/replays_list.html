@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table width=800px>
+	<tr>
+		<td>
+			{% if replays_list %}
+			We currently have {{ replays_list|length }} replay{{ replays_list|pluralize }}
+			<br><br>
+			<table width=800px class='content-table'>
+			{% for replay in replays_list %}
+			<tr>
+				<td width=20%>
+					{{ replay.player1 }}
+				</td>
+				<td width=20%>
+					{{ replay.player2 }}
+				</td>
+				<td width=30%>
+					{{ replay.map_name }}
+				</td>
+				<td width=15%>
+					{{ replay.game_length }}
+				</td>
+				<td width=15%>
+					Details..
+				</td>
+			</tr>
+				{% endfor %}
+			{% else %}
+					Stuff goes here
+			{% endif %}
+			
+		</table>
+		</td>
+	</tr>
+</table>
+
+{% endblock %}
