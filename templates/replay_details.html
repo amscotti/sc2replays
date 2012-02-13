@@ -8,8 +8,9 @@
 			filename - {{replay_file }}<br><br>
 			{{ gamemap }}<br><br>
 			{{ r.length.hours }}h {{ r.length.mins }}m {{ r.length.secs }}s<br><br>
-			{% for players, name in r.teams.players.items %}
-				{{ players }}<br><br>
+			{{ r.players.0.name }}<br><br>
+			{% for name in r.players %}
+				{{ name }}<br><br>
 			{% endfor %}
 		</td>
 	</tr>
