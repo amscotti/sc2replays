@@ -26,20 +26,19 @@
 			{% for i in r.players %}
 			<tr height=50px>
 				{% if i.play_race == "Zerg" %}
-					<td width=20% id="race_zerg">
-					{% else %}
-					{% if i.play_race == "Terran" %}
-						<td width=20% id="race_terran">
-						{% else %}
-						{% if i.play_race == "Protoss" %}
-						<td width=20% id="race_protss">
-						{% else %}
-						<td width=20%>
+					<td width="20%" id="race_zerg">
 				{% endif %}
+				{% if i.play_race == "Terran" %}
+					<td width="20%" id="race_terran">
 				{% endif %}
+				{% if i.play_race == "Protoss" %}
+					<td width="20%" id="race_protss">
 				{% endif %}
-					{{ i.name }}
-					
+
+				<font color="{{ i.color }}">
+				<b>
+				{{ i.name }}
+				</b>	
 				</td>
 				<td>
 				{% if i.result == "Win" %}
