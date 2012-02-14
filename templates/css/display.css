@@ -123,16 +123,25 @@ h2	{
 	# padding: 4px;
 	}
 
-.race_zerg	{
-	background-image: url("/media/img/Race-Icons-Zerg_bg.png");
+#race_zerg	{
+	background-image: url("/media/img/zerg.png");
+	background-repeat:no-repeat;
+	# background-size:contain;
+	background-position:left;
 	}
 
-.race_terran	{
-	background-image: url("/media/img/Race-Icons-Terran_bg.png");
+#race_terran	{
+	background-image: url("/media/img/terran.png");
+	background-repeat:no-repeat;
+	# background-size:contain;
+	background-position:left;
 	}
 
-.race_protoss	{
-	background-image: url("/media/img/Race-Icons-Protoss_bg.png");
+#race_protoss	{
+	background-image: url("/media/img/protoss.png");
+	background-repeat:no-repeat;
+	# background-size:contain;
+	background-position:left;
 	}
 
 img.winner	{
