@@ -144,6 +144,42 @@ h2	{
 	background-position:left;
 	}
 
+#p1_zerg	{
+	background-image: url("/media/img/zerg.png");
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+
+#p1_terran	{
+	background-image: url("/media/img/terran.png");
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+
+#p1_protoss	{
+	background-image: url("/media/img/protoss.png");
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+
+#p2_zerg	{
+	background-image: url("/media/img/zerg.png");
+	background-repeat:no-repeat;
+	background-position:left;
+	}
+
+#p2_terran	{
+	background-image: url("/media/img/terran.png");
+	background-repeat:no-repeat;
+	background-position:left;
+	}
+
+#p2_protoss	{
+	background-image: url("/media/img/protoss.png");
+	background-repeat:no-repeat;
+	background-position:left;
+	}
+	
 img.winner	{
 	float: right;
 	margin: 3px;

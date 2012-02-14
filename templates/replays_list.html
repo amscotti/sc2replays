@@ -9,21 +9,47 @@
 			<br><br>
 			<table width=800px class='content-table'>
 			{% for replay in replays_list %}
-			<tr>
-				<td width=20%>
-					{{ replay.player1 }}
+			<tr height=35px>
+				{% if replay.p1_race == "Zerg" %}
+					<td width="20%" id="p1_zerg">
+				{% endif %}
+				{% if replay.p1_race == "Terran" %}
+					<td width="20%" id="p1_terran">
+				{% endif %}
+				{% if replay.p1_race == "Protoss" %}
+					<td width="20%" id="p1_protoss">
+				{% endif %}
+
+				<b>
+				{{ replay.player1 }}
+				</b>	
+				
 				</td>
-				<td width=20%>
-					{{ replay.player2 }}
+				<td width=5%>
+				vs.
 				</td>
-				<td width=30%>
+				{% if replay.p2_race == "Zerg" %}
+					<td width="20%" id="p2_zerg">
+				{% endif %}
+				{% if replay.p2_race == "Terran" %}
+					<td width="20%" id="p2_terran">
+				{% endif %}
+				{% if replay.p2_race == "Protoss" %}
+					<td width="20%" id="p2_protoss">
+				{% endif %}
+				<b>
+				{{ replay.player2 }}
+				</b>	
+				
+				</td>
+				<td width=25%>
 					{{ replay.map_name }}
 				</td>
 				<td width=15%>
 					{{ replay.game_length }}
 				</td>
 				<td width=15%>
-					<a href='/replay/{{ replay.id }}'>Details..</a>
+					<a href='/replay/{{ replay.id }}'><img src="/media/img/mag-icon.png" title="Details" height="15px" width="15px"></a>
 				</td>
 			</tr>
 				{% endfor %}
