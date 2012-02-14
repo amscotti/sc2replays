@@ -4,7 +4,10 @@ import MySQLdb
 import sc2reader
 # import os
 
-replay_file = sc2reader.read_file("/home/mbedford/replays/Shakuras Plateau.SC2Replay")
+replay_array = sc2reader.read_file("/home/mbedford/replays/AutoMM/test", verbose=True)
+
+num_replays = len(replay_array)
+
 
 filename = replay_file.filename
 # filename = filename.replace(' ', '-')
@@ -39,11 +42,11 @@ patch_ver = replay_file.release_string
 format = replay_file.type
 game_category = replay_file.category
 
-db_con = MySQLdb.connect(user='sc2replays', db='sc2replays', passwd='m34tba!!$', host='localhost')
-cursor = db_con.cursor()
+# db_con = MySQLdb.connect(user='sc2replays', db='sc2replays', passwd='m34tba!!$', host='localhost')
+# cursor = db_con.cursor()
 
 
-insert_query = 'INSERT INTO display_replays (file, player1, player2, p1_race, p2_race, map_name, date_played, game_length, winner, patch_ver, format, game_category) VALUES ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s");' % (filename, player1, player2, p1_race, p2_race, map, date_played, game_length, winner, patch_ver, format, game_category)
+# insert_query = 'INSERT INTO display_replays (file, player1, player2, p1_race, p2_race, map_name, date_played, game_length, winner, patch_ver, format, game_category) VALUES ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s");' % (filename, player1, player2, p1_race, p2_race, map, date_played, game_length, winner, patch_ver, format, game_category)
 
 print insert_query
 

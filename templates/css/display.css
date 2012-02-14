@@ -88,6 +88,7 @@ h2	{
 	font-family: arial;
 	padding: 0px;
 	border-spacing: 0px;
+	vertical-align: middle;
 	}
 
 .content-table-dark	{
@@ -120,6 +121,23 @@ h2	{
 	# background: #e08510;
 	# border-radius: 5px;
 	# padding: 4px;
+	}
+
+.race_zerg	{
+	background-image: url("/media/img/Race-Icons-Zerg_bg.png");
+	}
+
+.race_terran	{
+	background-image: url("/media/img/Race-Icons-Terran_bg.png");
+	}
+
+.race_protoss	{
+	background-image: url("/media/img/Race-Icons-Protoss_bg.png");
+	}
+
+img.winner	{
+	float: right;
+	margin: 3px;
 	}
 	
 a:link    {text-decoration: none; color:#3f3f3f;}

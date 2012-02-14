@@ -4,14 +4,66 @@
 <table width=800px>
 	<tr>
 		<td>
-			Id from link is - {{ id }}<br><br>
-			filename - {{replay_file }}<br><br>
-			{{ gamemap }}<br><br>
-			{{ r.length.hours }}h {{ r.length.mins }}m {{ r.length.secs }}s<br><br>
-			{{ r.players.0.name }}<br><br>
-			{% for name in r.players %}
-				{{ name }}<br><br>
+			filename - {{replay_file }}<br>
+			{{ r.length.hours }}h {{ r.length.mins }}m {{ r.length.secs }}s<br>
+			{{ r.map_name }}<br>		
+		<table width=800px class='content-table'>
+			<tr>
+				<td width=20%>
+					Player
+				</td>
+				<td width=5%></td>
+				<td width=20%>
+					Colour
+				</td>
+				<td width=20%>
+					Race
+				</td>
+				<td width=30%>
+					APM
+				</td>
+			</tr>
+			{% for i in r.players %}
+			<tr height=50px>
+				{% if i.play_race == "Zerg" %}
+					<td width=20% id="race_zerg">
+					{% else %}
+					{% if i.play_race == "Terran" %}
+						<td width=20% id="race_terran">
+						{% else %}
+						{% if i.play_race == "Protoss" %}
+						<td width=20% id="race_protss">
+						{% else %}
+						<td width=20%>
+				{% endif %}
+				{% endif %}
+				{% endif %}
+					{{ i.name }}
+					
+				</td>
+				<td>
+				{% if i.result == "Win" %}
+					<img src="/media/img/trophyIcon.gif" height="20px">
+				{% endif %}
+				<td width=20%>
+					{{ i.color }}
+				</td>
+				{% if i.play.race == "Zerg" %}
+					<td width=30% id="race_zerg">
+				{% else %}
+					<td width=30%>
+				{% endif %}
+					{{ i.play_race }}
+				</td>
+				<td width=15%>
+					{{ i.avg_apm }}
+				</td>
+			</tr>
 			{% endfor %}
+						
+		</table>
+		
+		
 		</td>
 	</tr>
 </table>
